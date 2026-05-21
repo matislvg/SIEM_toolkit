@@ -139,7 +139,7 @@ Vérification de la réputation d'une IP suspecte extraite des logs. Ici, `185.2
 ├── README.md             # Documentation du projet
 ├── access.log            # Exemples de logs pour tester le Module 1
 ├── .gitignore
-└── images/               
+└── images/               # Capture d'écran pour le README.md
 ```
 
 
