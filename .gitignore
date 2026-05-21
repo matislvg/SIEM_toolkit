@@ -1,3 +1,11 @@
+# Fichiers générés par le script
 rapport_logs.json
+
+# Fichiers temporaires de Python
 __pycache__/
 *.pyc
+.python_history
+
+# Captures réseau
+*.pcap
+*.pcapng
