@@ -1,0 +1,10 @@
+192.168.1.50 - - [21/May/2026:10:00:01 +0200] "GET /index.html HTTP/1.1" 200 4324
+192.168.1.50 - - [21/May/2026:10:00:05 +0200] "GET /wp-login.php HTTP/1.1" 200 1543
+185.220.101.5 - - [21/May/2026:10:01:12 +0200] "GET /index.php?id=1%20union%20select%20null,username,password%20from%20users HTTP/1.1" 500 230
+185.220.101.5 - - [21/May/2026:10:01:15 +0200] "GET /../../../../etc/passwd HTTP/1.1" 400 412
+142.250.179.14 - - [21/May/2026:10:02:22 +0200] "GET /images/logo.png HTTP/1.1" 200 12430
+192.168.1.100 - - [21/May/2026:10:03:01 +0200] "GET /secret-page HTTP/1.1" 404 240
+192.168.1.100 - - [21/May/2026:10:03:04 +0200] "GET /admin/config HTTP/1.1" 404 240
+192.168.1.100 - - [21/May/2026:10:03:07 +0200] "GET /backup.sql HTTP/1.1" 404 240
+Ligne malformée sans adresse IP pour tester la robustesse du plan B
+10.0.0.5 - - [21/May/2026:10:04:00 +0200] "Ligne avec IP mais méthode HTTP totalement invalide"
