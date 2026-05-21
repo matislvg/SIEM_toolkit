@@ -89,7 +89,7 @@ Ce toolkit a été conçu pour boucler la boucle de détection en environnement 
 Détection automatique d'attaques par signatures sur un fichier `access.log` d'exemple, avec export JSON du rapport.
 
 <p align="center">
-  ![Capture d'écran Module 1 - Logs](images/SIEM_module1.png)
+  <img src="images/SIEM_module1.png" alt="Capture d'écran Module 1" width="300">
 </p>
 
 ---
@@ -98,13 +98,20 @@ Détection automatique d'attaques par signatures sur un fichier `access.log` d'e
 
 Vérification de la réputation d'une IP suspecte extraite des logs. Ici, `185.220.101.5` identifiée comme **malveillante** par 9 moteurs, et `8.8.8.8` (Google DNS) confirmée **propre**.
 
-<p align="center">
-  ![Capture d'écran Module 2 - Propre](images/SIEM_module2_propre.png)
-</p>
-
-<p align="center">
-  ![Capture d'écran Module 1 - Logs](images/SIEM_module2_malveillante.png)
-</p>
+<table align="center" border="0" cellpadding="10">
+  <tr>
+    <td align="center" valign="top">
+      <img src="images/SIEM_module2_propre.png" alt="Capture d'écran Module 2 - Propre" width="420">
+      <br><br>
+      <sub>🍏 <b>Analyse d'une IP saine (Google DNS)</b></sub>
+    </td>
+    <td align="center" valign="top">
+      <img src="images/SIEM_module2_malveillante.png" alt="Capture d'écran Module 2 - Malveillante" width="420">
+      <br><br>
+      <sub>🍎 <b>Détection d'une IP malveillante (Nœud Tor)</b></sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -113,13 +120,13 @@ Vérification de la réputation d'une IP suspecte extraite des logs. Ici, `185.2
 **ICMP Malformé :** Les paquets injectés avec le Type 99 (invalide selon RFC 792) sont immédiatement identifiés par Wireshark comme `Unknown ICMP (obsolete or malformed?)`. La pile réseau répond avec `Destination unreachable (Protocol unreachable)`, confirmant la détection de l'anomalie protocolaire.
 
 <p align="center">
-  ![Capture d'écran Module 3 - ICMP](images/SIEM_module3_icmp.png)
+  <img src="images/SIEM_module3_icmp.png" alt="Capture d'écran Module 3 - ICMP" width="850">
 </p>
 
 **ARP Flooding :** Le flood de fausses réponses ARP (`172.19.225.254 is at 00:00:00:00:00:00`) empoisonne le cache des machines du réseau. On observe la réaction en panique des hôtes (HP, Dell, Inventec) qui tentent en boucle de retrouver la vraie adresse MAC de la passerelle.
 
 <p align="center">
-  ![Capture d'écran Module 3 - ARP](images/SIEM_module3_arp.png)
+  <img src="images/SIEM_module3_arp.png" alt="Capture d'écran Module 3 - ARP" width="700">
 </p>
 
 ---
@@ -127,11 +134,12 @@ Vérification de la réputation d'une IP suspecte extraite des logs. Ici, `185.2
 ## 📁 Structure du dépôt
 
 ```text
-├── siem_toolkit.py       # Script principal unifié (Modules 1, 2, 3)
-├── requirements.txt      # Liste des dépendances Python
-├── README.md             # Documentation du projet
-└── access.log            # Exemples de logs pour tester le Module 1
-
+├── siem_toolkit.py       # Script principal unifié (Modules 1, 2, 3)
+├── requirements.txt      # Liste des dépendances Python
+├── README.md             # Documentation du projet
+├── access.log            # Exemples de logs pour tester le Module 1
+├── .gitignore
+└── images/               
 ```
 
 
