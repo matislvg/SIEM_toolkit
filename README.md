@@ -145,6 +145,7 @@ Vérification de la réputation d'une IP suspecte extraite des logs. Ici, `185.2
 
 ---
 
-## ⚠️ Disclaimer
+## ⚠️ Avertissement légal
 
-Cet outil est développé uniquement à des fins pédagogiques, académiques et de recherche en sécurité informatique dans un environnement de laboratoire isolé (machines virtuelles, réseau host-only). L'utilisation de cet outil pour cibler des infrastructures sans l'accord explicite et écrit de leur propriétaire est strictement interdite et passible de sanctions pénales. L'auteur décline toute responsabilité quant à un usage malveillant ou hors d'un cadre autorisé.
+Cet outil est développé à des fins **pédagogiques et de recherche en sécurité** dans un environnement de laboratoire isolé (machines virtuelles, réseau host-only).  Toute utilisation sur une infrastructure sans l'autorisation explicite et écrite de son propriétaire est **strictement interdite** et peut constituer une infraction pénale (article 323-1 du Code pénal français).  
+L'auteur décline toute responsabilité quant à un usage malveillant ou hors cadre autorisé.
